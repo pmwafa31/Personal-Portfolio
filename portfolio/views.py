@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from portfolio.models import Project, Contact, ProjectDetail, ProjectImage
 from django.template import loader
 from django.core.mail import EmailMultiAlternatives
+from django.template import RequestContext
 # Create your views here.
 
 

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-from pathlib import Path
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +26,7 @@ SECRET_KEY = 'personal_portfolio'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['site.com']
+ALLOWED_HOSTS = ['wafapm.pythonanywhere.com']
 
 
 # Application definition
@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST ='personal_portfolio'
 EMAIL_PORT =123
 EMAIL_HOST_USER ='personal_portfolio'
-EMAIL_HOST_PASSWORD ='personal_portfolio'
+EMAIL_HOST_PASSWORD = 'abc'
 EMAIL_USE_TLS =False
 EMAIL_BACKEND ='personal_portfolio'
 
@@ -145,3 +145,5 @@ try:
     from .local_settings import *
 except ImportError:
     print('Error')
+
+
